@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.a4tecnologia.diariodedororofacial.FormularioActivity$PlaceholderFragment">
+
+
+    <TextView
+        android:id="@+id/section_labelQ5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passando por stress emocional?"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroupQ5">
+
+    <RadioButton
+        android:text="Sim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/section_labelQ5"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp"
+        android:id="@+id/radioButtonQ5S" />
+
+    <RadioButton
+        android:text="Não"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButtonQ5N"
+        android:layout_below="@+id/radioButtonQ5S"
+        android:layout_alignParentStart="true" />
+    </RadioGroup>
+
+
+
+    <Button
+        android:text="Próximo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnProximo"
+        android:id="@+id/btnProximo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Anterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnAnterior"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btnAnterior" />
+</RelativeLayout>

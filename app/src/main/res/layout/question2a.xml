@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imagemrosto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.a4tecnologia.diariodedororofacial.FormularioActivity$PlaceholderFragment">
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupLocalizDor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow android:layout_marginTop="70dp">
+
+            <TextView
+                android:id="@+id/txtViewCabecaDireita"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:text="Cabeça Direita"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtViewCabecaEsquerda"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginLeft="30dp"
+                android:foregroundGravity="right"
+                android:gravity="right"
+                android:text="Cabeça Esquerda"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:minHeight="74dp">
+
+
+            <RadioButton
+                android:id="@+id/rbCabecaDireita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:width="50dp"
+                android:height="50dp"
+                android:scaleX="2.5"
+                android:scaleY="2.5"
+                android:text="" />
+
+
+            <RadioButton
+                android:id="@+id/rbCabecaEsquerda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="10dp"
+                android:width="50dp"
+                android:height="50dp"
+                android:scaleX="2.5"
+                android:scaleY="2.5" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp">
+
+            <TextView
+                android:id="@+id/txtViewRostoDireita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rosto Direito"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtViewRostoEsquerda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="Rosto Esquerdo"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:minHeight="74dp">
+
+            <RadioButton
+                android:id="@+id/rbRostoDireito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:width="50dp"
+                android:height="50dp"
+                android:scaleX="2.5"
+                android:scaleY="2.5"
+                android:text="" />
+
+            <RadioButton
+                android:id="@+id/rbRostoEsquerdo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="10dp"
+                android:width="50dp"
+                android:height="50dp"
+                android:scaleX="2.5"
+                android:scaleY="2.5"
+                android:text="" />
+
+        </TableRow>
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnProximo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="btnProximo"
+        android:text="Próximo" />
+
+    <Button
+        android:id="@+id/btnAnterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="btnAnterior"
+        android:text="Anterior" />
+
+</RelativeLayout>
